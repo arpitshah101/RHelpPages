@@ -1,0 +1,8 @@
+#263238 for navbar background
+#FAFAFA for text on navbar
+
+Design:
+  codecademy-like structure
+  left-pane for annotations or sidebar navigation
+  middle-area for tutorial/documentation text
+  right-area for output window / sample images
