@@ -23,7 +23,7 @@
 <body>
   <div class="site-wrapper">
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -50,18 +50,23 @@
     </nav>
     <div class="content-wrapper">
       <div class="sidebar hidden-xs hidden-sm" id="left-sidebar">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia sit fugit nesciunt, aliquam modi odit vel accusamus labore possimus sint, dolorem minus alias eligendi mollitia ipsam, repudiandae at voluptas porro!
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#description">Description</a></li>
+          <li><a href="#parameters">Parameters</a></li>
+          <li><a href="#examples">Examples</a></li>
+          <li><a href="#customize">Customize</a></li>
+        </ul>
       </div>
-      <div class="content">
-        <div class="section-header">
+      <div class="content" data-spy="scroll" data-target="#left-sidebar">
+        <div class="section-header" id="description">
           <h1>Plot</h1>
           <div class="signature"><b>plot</b>(x, y, ...)</div>
         </div>
         <div class="subsection">
-          Generic function for plotting of R objects.
+          <p>Generic function for plotting of R objects.</p>
         </div>
         <div class="subsection">
-          <h2>Parameters/Arguments</h2>
+          <h2 id="parameters">Parameters/Arguments</h2>
           <table class="striped-table">
             <tbody>
               <tr>
@@ -72,19 +77,41 @@
                 <td class="label-col">y</td>
                 <td>y coordinates of points in the plot.</td>
               </tr>
+              <tr>
+                <td class="label-col">col</td>
+                <td>Default plotting color</td>
+              </tr>
             </tbody>
           </table>
         </div>
         <div class="subsection">
-          <h2>Examples</h2>
+          <h2 id="examples">Examples</h2>
           <div class="table-section">
             <iframe width='100%' height='300' src='http://www.r-fiddle.org/#/embed?id=sg9Qdr6B&version=1' allowfullscreen='allowfullscreen' frameborder='0'></iframe>
+          </div>
+        </div>
+        <div class="subsection">
+          <h2 id="customize">Customize Appearance</h2>
+          <h3>Color</h3>
+          <div class="table-section">
+            <!-- <iframe width='100%' height='300' src='http://www.r-fiddle.org/#/embed?id=sg9Qdr6B&version=1' allowfullscreen='allowfullscreen' frameborder='0'></iframe> -->
+          </div>
+          <h3>Types of plots</h3>
+          <div class="table-section">
+
+          </div>
+          <h3>Axis Labels & Titles</h3>
+          <div class="table-section">
+
+          </div>
+          <h3>Multiple Plots</h3>
+          <div class="table-section">
+            
           </div>
         </div>
       </div>
     </div>
 
   </div>
-
 </body>
 </html>

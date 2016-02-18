@@ -54,10 +54,14 @@
   width: 80%;
   height: 100%;
   padding: 2em;
+  overflow-y: scroll;
+  position: fixed;
+  margin-left: 20%;
+  top: 50px;
 }
 
 .site-wrapper {
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
 }
 
 .section-header, .subsection {
@@ -79,6 +83,16 @@ table.striped-table td {
 table.striped-table td.label-col{
   width: 20%;
   font-weight: bold;
+}
+
+nav.navbar {
+  border: none;
+}
+
+#left-sidebar {
+  position: fixed;
+  overflow-y: scroll;
+  top: 50px;
 }
 
 /* TEMPORARY TYPOGRAPHY STYLESHEET PORTION */
@@ -141,7 +155,7 @@ p {
   font-size: 0.875em;
   margin: 0 0 15px 0;
 }
-a {
+/*a {
   color: #b83c82;
   text-decoration: underline;
   outline: none;
@@ -151,7 +165,7 @@ a:hover, a:focus, a:active {
   color: #b83c82;
   text-decoration: none;
   outline: none;
-}
+}*/
 .cn {
   color: #455463;
 }
