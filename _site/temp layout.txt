@@ -1,0 +1,11 @@
+Title:
+Basic Function signature:
+Function Description:
+
+Parameter Name & Desc. Pairs:
+    i.e.
+      x   x-coordinate value
+      y   y-coordinate value
+
+Example Title:
+  Example Code:

@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plot | R Help Documentation</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/material.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    {% include header.html %}
+
+    <div class="content" data-spy="scroll" data-target="#left-sidebar">
+      <div class="section-header" id="description">
+        <h1>
+          {{ page.title }}
+        </h1>
+        <div class="signature"><b>{{ page.signatureName }}</b>{{ page.parameter list }}</div>
+      </div>
+      <div class="subsection"> <!-- INSERT DESCRIPTION IN THE <p> </p> BELOW -->
+        <p>{{ page.description }}</p>
+      </div>
+      <div class="subsection">
+        <h2 id="parameters">Parameters/Arguments</h2>
+        <table class="striped-table">
+          <tbody>
+            <!-- SAMPLE PARAMETER PAIR
+            <tr>
+              <td class="label-col">x</td>
+              <td>x coordinates of points in the plot.</td>
+            </tr> -->
+            <tr>
+              <td class="label-col"> <!-- PARAMETER NAME --> </td>
+              <td> <!-- PARAMETER DESCRIPTION --> </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="subsection">
+        <h2 id="examples">Examples</h2>
+        <div class="table-section">
+          <!-- INSERT EMBED CODE FROM R-FIDDLE HERE -->
+        </div>
+      </div>
+      <div class="subsection">
+        <h2 id="customize">Customize Appearance</h2>
+        <!-- SAMPLE CUSTOMIZATION SECTION BELOW
+        <h3>Color</h3>
+        <div class="table-section">
+          <iframe width='100%' height='300' src='http://www.r-fiddle.org/#/embed?id=XzPvtLqz' allowfullscreen='allowfullscreen' frameborder='0'></iframe>
+        </div> -->
+        <h3> <!-- SUBSECTION HEADER HERE. I.E. "CHANGING COLOR" --> </h3>
+        <div class="table-section">
+          <!-- INSERT EMBED CODE FROM R-FIDDLE HERE -->
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
